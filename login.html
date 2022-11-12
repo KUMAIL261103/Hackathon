@@ -1,0 +1,59 @@
+
+{% block content %}
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN</title>
+    </head>
+    <style>
+        h1{
+        text-align: center;
+        text-decoration: underline;
+        font-size: larger;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    label{
+        text-align: center;
+        background-color: lightblue;
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    </style>
+    <body>
+       <centre> <h1>LOGIN</h1></centre>
+        <br><br><br>
+        <div>
+            <form action ="register.js">
+                <centre>
+             <label for ="email">
+                <input type ="text" placeholder="Enter your email" id ="email">
+             </label>
+             <br><br>
+             <label for ="password">
+                <input type ="email" placeholder="Enter your password" id ="pwd">
+             </label>
+            
+            </centre>
+                <br><br><br>
+                <input type="submit">
+                
+             
+                
+             
+    
+    
+            </form>
+        </div>
+    </body>
+    </html>
+{% endblock %}
+

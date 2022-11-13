@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<style>
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #submit{
+        background-color:green;
+    }
+    button{
+        font-size: 15px;
+        padding: 4px;
+        border-radius: 20px;
+
+    }
+    .reg1{
+        color:black;
+        
+       
+    }
+    .reg{
+        background-color: white;
+        padding: 3%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .logo{
+        text-align: center;
+    }
+    #login{
+        font-family:georgia;
+        font-size: xx-large;
+        text-align: center;
+    }
+    .footer {
+    background-color: black;
+   
+    width: 100%;
+    DISPLAY:FLEX;
+    color: white;
+    padding: 30px;
+    
+    
+  } 
+.LINKS{
+    left:50%;
+    text-align: left;
+    align-items:left;
+}
+.ADDRESS{
+    text-align: right;
+    align-items: right;
+    right:50%;
+}
+.CONTACTME{
+    text-align: center;
+    align-items: center;
+    
+}
+pre{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+    
+</style>
+<body style="background-image:linear-gradient(to right,#de6262,#ffb88c)">
+        
+        <!-- <div class="flex-row navbar">
+        <a href="" class="brand-name">Login</a>
+        <ul class="flex-row nav-links">
+            <a href="">
+                <li class="nav-items">Home</li>
+            </a>
+            <a href="">
+                <li class="nav-items">About</li>
+            </a>
+            <a href="">
+                <li class="nav-items">Services</li>
+            </a>
+            <a href="">
+                <li class="nav-items">Pages</li>
+            </a>
+            <a href="">
+                <li class="nav-items">Blog</li>
+            </a>
+            <a href="">
+                <li class="nav-items">Contact</li>
+            </a>
+        </ul>
+    </div> -->
+    <div class="logo" >
+        <img src="https://i.ibb.co/b2LnMPG/Screenshot-132-removebg-preview.png" height="150px" width="150px">
+    </div>
+
+    {% block content %}
+    <form action ="login" default method="post">
+      
+        {% csrf_token %}
+    <form class ="reg">
+       <div class="reg1">
+        <div id="login">
+            Login
+        </div>
+        <br>
+        
+        UserName:<input type="text" id="name" name="name" placeholder="Username"
+            minlength="4" maxlength="32" size="30">
+
+        <br>
+
+          Email ID:<input type="email" id="email" placeholder="Email"
+                pattern=".+@gmail.com" size="30" required>
+        <br>
+         
+          Password:<input type="password" id="pass" name="password" placeholder="Password"
+                    minlength="8" required>
+                    <h1>{{message}}</h1>
+    </form>
+                    {% endblock%}
+          <blockquote>
+              <a href="register.html">Don't have an account?Click here</a>
+          </blockquote>
+        
+        <div class="class">
+            <a href="" id="button">
+                
+                <h2><button type="button" id="click" onclick="document.location='page2.html'">sign in</button></h2>
+               
+             </a>
+        </div>
+        </div>
+    </form>
+    <footer class="hello">
+        <div class= "footer">
+         <div class="links">
+             <p>SOCIAL LINKS</p>
+             <a href="https://www.instagram.com/accounts/onetap/?next=%2F">INSTAGRAM</a><br>
+             <a href="higherx6@gmail.com">GMAIL </a><br>
+                 <a href="">TWITTER</a>
+         </div>
+         <div class="address">
+          <pre>                                                                                    ADDRESS:
+                                                                                 ADANI UNIVERSITY,
+                                                                                 SHANTIGRAM,AHMEDABAD,
+                                                                                 GUJARAT,
+     </pre>
+         </div><div class="contactme">
+             
+             <pre>                                                                                       CONTACTME:
+                                                                                     +919327725889
+             </pre>  
+         </div>
+     
+        </div>
+       </footer>
+    
+
+    
+</body>
+
+</html>

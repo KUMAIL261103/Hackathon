@@ -1,0 +1,233 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style>
+    
+    a{
+        text-decoration: none;
+        padding: 5px;
+    }
+    li {
+        list-style-type: none;
+        color: white;
+        font-size: large;
+        
+    }
+    .flex-row {
+        display: flex;
+        align-items: right;
+        background-color:black;
+        padding: 10px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        /* border: 2px solid black; */
+        background-color:black;
+        padding: 10px;
+    }
+
+    .nav-items {
+        /* border: 2px solid greenyellow; */
+        margin: 0 5px;
+        border-color: white;
+    }
+    .button{
+        font-size: large; 
+        border-radius: 25px;
+        max-height:200%;
+        padding: 4px;
+        background-color:azure;
+        color:brown;
+    }
+    .third{
+        text-align: left;
+        padding: 15px;
+    }
+    
+    
+    .fifth{
+        text-align: right;
+        font-size: large;
+        height: 200px;
+        
+    }
+    .container{
+        display:flex;
+        padding: 10px;
+        
+    }
+    .hi{
+        padding: 10px;
+    }
+
+
+    .text-box{
+        position: relative;
+        top:70%;
+        left: 10%;
+       background-color:white;
+        width: 900px;
+        padding: 20px;
+    }
+    .text-box input{
+        width: 80%;
+        height: 50px;
+        padding: 0 15px;
+        margin-bottom: 15px;
+        color: black;
+    }
+    .text-box h2{
+        font-size: xx-large;
+        color: black;
+        
+    }
+    #hired{
+        font-size: xx-large;
+        color: purple;
+
+    }
+    select{
+        width: 250px;
+        height: 50px;
+        font-size: medium;
+    }
+    body{
+        background-repeat: no-repeat ;
+        background-size: cover;
+    }
+    .nav-logo{
+        text-align: left;
+    }
+    .button{
+        margin-left:500px ;
+    }
+    .footer {
+    background-color: black;
+   
+    width: 100%;
+    DISPLAY:FLEX;
+    color: white;
+    padding: 30px;
+    
+    
+  } 
+.LINKS{
+    left:50%;
+    text-align: left;
+    align-items:left;
+}
+.ADDRESS{
+    text-align: right;
+    align-items: right;
+    right:50%;
+}
+.CONTACTME{
+    text-align: center;
+    align-items: center;
+    
+}
+pre{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+    
+</style>
+<body style="background-image:linear-gradient(to right,#ffb88c,#de6262)">
+    <div class="forth">
+        <form action="" method="post">
+             
+            <ul class="flex-row nav-links">
+                <div class="img">
+                <a href="" class="nav-logo">
+                     <img src="https://i.ibb.co/CVPRqmH/image.jpg" height="90px" width="80px">
+                </a>
+                </div>
+                <a href="http://127.0.0.1:8000/" class="nav-item">
+                  <!-- <button type="button" class="button2" >Home</button> -->
+                       <p style="color:white ;font-size: 30px;">Home</p>
+                  </a>
+                  <form action="personalinfo">
+                  <!-- <button type="button" class="button3">Profile</button> -->
+                  
+                     <button style="font-size:20px; background-color:black; color:white"> <a href="http://127.0.0.1:8000/page1" class="nav-item">Profile</button>
+                  </form>
+                  {% if user.is_authenticated %}
+                  <li>Hello,{{user.first_name}}</li>
+                  <li><a href="http://127.0.0.1:8000/logout">logout</a></li>
+                  {% else %}
+                  <li>hello</li>
+                  {% endif %}
+                </a>
+            </ul>
+            </form>
+    </div>
+ <div class="container">  
+     <div class="third">
+        <img src="data:image/jpeg;base64,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"  alt="student photo">
+        <h2>UserName:{{user.username}}</h2>
+        <h2>Name:{{user.first_name}}</h2>
+        <h2>Email ID:{{user.email}}</h2>
+     </div>
+         <div class="text-box">
+            <h2>Education</h2>
+            <form action="#">
+                <input type="text" name="fullname" placeholder="your education details">
+            </form>
+            <h2>Interest</h2>
+            <form action="#">
+                <input type="text" name="fullname" placeholder="your interest">
+            </form>
+            <h2>Experience</h2>
+            <form action="#">
+                <input type="text" name="fullname" placeholder="your Experience">
+            </form>
+            <div id="hired">
+                <h2>For-hiring</h2>
+                <select name="hiring">
+                    <option selected hidden>select</option>
+                    <option value="no">Already Hired</option>
+                    <option value="no">Finding The Internship</option>
+                </select>
+            </div>
+         </div>
+
+ </div>
+ <footer class="hello">
+    <div class= "footer">
+     <div class="links">
+         <p>SOCIAL LINKS</p>
+         <a href="https://www.instagram.com/accounts/onetap/?next=%2F">INSTAGRAM</a><br>
+         <a href="higherx6@gmail.com">GMAIL </a><br>
+             <a href="">TWITTER</a>
+     </div>
+     <div class="address">
+      <pre>                                                                              ADDRESS:
+                                                                             ADANI UNIVERSITY,
+                                                                             SHANTIGRAM,AHMEDABAD,
+                                                                             GUJARAT,
+ </pre>
+     </div><div class="contactme">
+         
+         <pre>                                                                                                     CONTACTME:
+                                                                                                  +919327725889
+         </pre>  
+     </div>
+ 
+    </div>
+   </footer>
+
+
+
+    
+</body>
+
+</html>
+{% endblock %}

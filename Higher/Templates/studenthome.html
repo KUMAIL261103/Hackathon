@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="kstyles.css ">
+<style>
+  .nav-bar{
+    color: white;
+}
+
+.jumbo{
+    margin: 50px;
+    background-color:lightgrey;
+}
+
+.text{
+    margin: 12px;
+}
+#COMPANY{
+    text-align: center;
+}
+.footer {
+    background-color: black;
+   
+    width: 100%;
+    DISPLAY:FLEX;
+    color: white;
+    padding: 30px;
+    
+    
+  } 
+.LINKS{
+    left:50%;
+    text-align: left;
+    align-items:left;
+}
+.ADDRESS{
+    text-align: right;
+    align-items: right;
+    right:50%;
+}
+.CONTACTME{
+    text-align: center;
+    align-items: center;
+        
+}
+pre{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+</style>
+</head>
+<body>
+
+    <!-- navbar -->
+
+    <nav class=" navbar navbar-expand-lg bg-dark" >
+        <div class="container-fluid" height="40px">
+            <div class="logo">
+
+                <img src="https://i.ibb.co/b2LnMPG/Screenshot-132-removebg-preview.png" alt="" height="30PX">
+            </div>
+            <img src="mylogo.jpg " height="70px" alt="">
+          <a class="nav-bar navbar-brand" ID="COMPANY"href="#">COMPANIES</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-bar nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-bar nav-link" href="#">Profile</a>
+                <h1>{{user.first_name}}</h1>
+              </li>
+              <h1>{{user.username}}</h1>
+              
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- NAVBAR -->
+
+    <!-- JUMBPTRON -->
+
+
+<div class="jumbo">
+    <div class="jumbo jumbotron">
+        <B><h1 class="display-4">INTEL</h1></B>
+        <p class="lead">We are glad to announce you we are hiring</p>
+        <hr class="my-4">
+        <p>Here is how you get to your dream internship and have a boost start to your carrier.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="company" role="button">view more</a>
+        </p>
+      </div>
+</div>
+<div class="jumbo">
+    <div class="jumbo jumbotron">
+        <h1 class="display-4">ITC</h1></B>
+        <p class="lead">We are glad to announce you we are hiring</p>
+        <hr class="my-4">
+        <p>Here is how you get to your dream internship and have a boost start to your carrier.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="COMPANY2" role="button">view more</a>
+        </p>
+      </div>
+</div><div class="jumbo">
+<div class="jumbo jumbotron">
+    <B><h1 class="display-4">RELIANCE INDUSTRIES</h1></B>
+    <p class="lead">We are glad to announce you we are hiring</p>
+    <hr class="my-4">
+    <p>Here is how you get to your dream internship and have a boost start to your carrier.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="COMPANY3" role="button">view more</a>
+    </p>
+  </div>
+</div><div class="jumbo">
+<div class="jumbo jumbotron">
+    <B><h1 class="display-4">VALUE LABS</h1></B>
+    <p class="lead">We are glad to announce you we are hiring</p>
+    <hr class="my-4">
+    <p>Here is how you get to your dream internship and have a boost start to your carrier.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="COMPANY4" role="button">view more</a>
+    </p>
+  </div>
+</div><div class="jumbo">
+<div class="jumbo jumbotron">
+   <B> <h1 class="display-4">EXFO</h1></B>
+    <p class="lead">We are glad to announce you we are hiring</p>
+    <hr class="my-4">
+    <p>Here is how you get to your dream internship and have a boost start to your carrier.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="COMPANY5" role="button">view more</a>
+    </p>
+  </div>
+</div><div class="jumbo">
+<div class="jumbo jumbotron">
+   <B> <h1 class="display-4">CHEGG</h1></B>
+    <p class="lead">We are glad to announce you we are hiring</p>
+    <hr class="my-4">
+    <p>Here is how you get to your dream internship and have a boost start to your carrier.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="COMPANY6" role="button">view more</a>
+    </p>
+  </div>
+</div>
+<footer>
+    <DIV CLASS= "footer">
+     <div class="links">
+         <P>SOCIAL LINKS</P>
+         <a href="https://www.instagram.com/accounts/onetap/?next=%2F">INSTAGRAM</a><br>
+         <a href="higherx6@gmail.com">GMAIL </a><br>
+             <a href="">TWITTER</a>
+     </div>
+     <div class="address">
+      <pre>                                                                             ADDRESS:
+                                                                             ADANI UNIVERSITY,
+                                                                             SHANTIGRAM,AHMEDABAD,
+                                                                             GUJARAT,
+ </pre>
+     </div><div class="contactme">
+         
+         <pre>                                                                                                    CONTACTME:
+                                                                                                      +919327725889
+         </Pre>  
+     </div>
+ 
+    </DIV>
+   </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

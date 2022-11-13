@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIgherX</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+   <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="index.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.container{
+    font-size: 20px;
+    text-align: center;
+   background-color:antiquewhite;
+    color:black;
+    font-family: 'Rubik', sans-serif;
+}
+#logo1{
+    height:30;
+}
+.logo{
+    height:5px;
+    align-items: left;
+}
+#id1,#id2{
+    text-align: center;
+    align-items: center;
+    height:50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: antiquewhite;
+    
+}
+#id1{
+    margin-left: 40%;
+   
+}
+
+#id2{
+   margin-left: 50%;
+}
+h1{
+    text-align: center;
+}
+.image{
+    height: 300px;
+    display: flex;
+    padding: 100px;
+
+}
+#DECRE{
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-weight: bold;
+    margin-top: 200px;
+
+}
+.footer {
+    background-color: black;
+   
+    width: 100%;
+    DISPLAY:FLEX;
+    color: white;
+    padding: 30px;
+    
+    
+  } 
+.LINKS{
+    left:50%;
+    text-align: left;
+    align-items:left;
+}
+.ADDRESS{
+    text-align: right;
+    align-items: right;
+    right:50%;
+}
+.CONTACTME{
+    text-align: center;
+    align-items: center;
+    
+}
+pre{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*#CONT{
+    
+    background-color: black;
+    color:white;
+    padding:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    DISPLAY:FLEX;
+    
+} */
+
+
+</style>
+</head>
+<body>
+    <div class="container" name="n1">
+        
+      <img src="https://i.ibb.co/b2LnMPG/Screenshot-132-removebg-preview.png"alt ="logo" id ="logo1" height="100px">
+    </div>
+    
+    
+   <div class="image">
+   <div class="c1"><a href="register.html"><img src="https://i.ibb.co/dWfGz5f/College-Student-with-Book-and-Laptop-Graphics-6921405-1-1-580x434-removebg-preview-2.png" alt="student"></a>
+    <br>
+{% block content %}
+<form action='register'>
+    <button id="id1" >
+    Job Seeker
+</button></div>
+</form>
+   <div class="c2"><a href="register.html"><img src ="https://i.ibb.co/M9VZfQc/woman-g657f34f17-1280-removebg-preview-2.png" alt ="company"></a><br><br>
+<form action='register'>
+    <button id="id2">
+    Recruiter
+   </button>
+</form>
+{% endblock %}
+</div>
+    
+    </div> 
+
+   <br><br><br><br><br><br><br>
+   <p ID="DECRE">
+    We are here to help you to achieve your first internship / first job.
+    At Higher(X) we help you to connect with your dream company and apply for your dream job.
+    Similarly companies can also be benefitted by getting skilled ,proficient memebers in 
+    their team.
+   </p>
+   <BR><BR><BR>
+  <footer>
+   <DIV CLASS= "footer">
+    <div class="links">
+        <P>SOCIAL LINKS</P>
+        <a href="https://www.instagram.com/accounts/onetap/?next=%2F">INSTAGRAM</a><br>
+        <a href="higherx6@gmail.com">GMAIL </a><br>
+            <a href="">TWITTER</a>
+    </div>
+    <div class="address">
+     <pre>                                                                             ADDRESS:
+                                                                            ADANI UNIVERSITY,
+                                                                            SHANTIGRAM,AHMEDABAD,
+                                                                            GUJARAT,
+</pre>
+    </div><div class="contactme">
+        
+        <pre>                                                                                                    CONTACTME:
+                                                                                                     +919327725889
+        </Pre>  
+    </div>
+
+   </DIV>
+  </footer>
+</body>
+</html>

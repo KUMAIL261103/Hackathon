@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="page1.css">
+<style>
+   
+   .footer {
+    background-color: black;
+   
+    width: 100%;
+    DISPLAY:FLEX;
+    color: white;
+    padding: 30px;
+    
+    
+  } 
+.LINKS{
+    left:50%;
+    text-align: left;
+    align-items:left;
+}
+.ADDRESS{
+    text-align: right;
+    align-items: right;
+    right:50%;
+}
+.CONTACTME{
+    text-align: center;
+    align-items: center;
+    
+}
+pre{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+</style>
+
+<body style=" background-image:linear-gradient(to right,#de6262,#ffb88c)">
+    <div class="container">
+        <button style="font-size:20px; background-color:black; color:white"> <a href="http://127.0.0.1:8000/studenthome" class="nav-item">Home</button>
+        </div>
+        <a class="flex" href="">
+            <h1 style="text-align:center;">Personal Information</h1>
+        </a>
+        <div class="firstcontainer">
+            <img src="https://www.iimcal.ac.in/sites/all/files/images/neil_merchant.png" align="right" alt="student photo" >
+        </div>
+  <ul>
+     <div class="second">
+        <h2>First Name:{{user.first_name}}</h2>
+        <h2>Last Name:{{user.last_name}}</h2>
+        <h2>User Name:{{user.username}}</h2>
+
+        <h2>Email ID:{{user.email}}</h2>
+        <h2>password:{{user.password}}</h2>   
+     </div>
+    </ul>
+     
+
+
+    <footer class="hello">
+        <div class= "footer">
+         <div class="links">
+             <p>SOCIAL LINKS</p>
+             <a href="https://www.instagram.com/accounts/onetap/?next=%2F">INSTAGRAM</a><br>
+             <a href="higherx6@gmail.com">GMAIL </a><br>
+                 <a href="">TWITTER</a>
+         </div>
+         <div class="address">
+          <pre>                                                                                 ADDRESS:
+                                                                                 ADANI UNIVERSITY,
+                                                                                 SHANTIGRAM,AHMEDABAD,
+                                                                                 GUJARAT,
+     </pre>
+         </div><div class="contactme">
+             
+             <pre>                                                                                                     CONTACTME:
+                                                                                                      +919327725889
+             </pre>  
+         </div>
+     
+        </div>
+       </footer>
+    
+    
+
+</body>
+</html>

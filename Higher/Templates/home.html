@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIgherX</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        .container{
+            font-size: 25px;
+            text-align: center;
+           background-color: black;
+            color: white;
+             font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .logo{
+            height:5px;
+            align-items: left;
+        }
+        
+        h1{
+            text-align: center;
+        }
+        .image{
+            height: 300px;
+            display: flex;
+            padding: 100px;
+        
+        }
+        #DECRE{
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            
+        
+        }
+        #CONT{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container" name="n1">
+        <h1>HIghER(X)</h1>
+      
+    </div>
+    {% if user.is_authenticated %}
+    <li>Hello,{{user.first_name}}</li>
+    <li><a href="http://127.0.0.1:8000/logout">logout</a></li>
+    {% else %}
+    <li>hello</li>
+    {% endif %}
+   <div class="image">
+   <div class="c1"><a href="http://127.0.0.1:8000/register.html"><img src="https://i.ibb.co/dWfGz5f/College-Student-with-Book-and-Laptop-Graphics-6921405-1-1-580x434-removebg-preview-2.png" alt="student"></a>
+    {% block content %}
+    <form action='register'>
+        <button>register</button>
+    </form>
+    <form action='login'>
+        <input type="submit">
+        
+    </form>
+    
+    {% endblock %}
+    
+    <h1> {{name}}</h1></div>
+  
+   <div class="c2"><a href="register.html"><img src ="https://i.ibb.co/M9VZfQc/woman-g657f34f17-1280-removebg-preview-2.png" alt ="company"></a>
+    <h1>Recruiter</h1>
+
+
+</div>
+    
+   </div>
+
+   <br><br><br><br><br><br><br>
+   <pre ID="DECRE">
+    We are here to help you to achieve your first internship / first job.
+    At Higher(X) we help you to connect with your dream company and apply for your dream job.
+    Similarly companies can also be benefitted by getting skilled ,proficient memebers in 
+    their team.
+   </pre>
+   <footer>
+   <pre ID ="CONT">
+    Contact U<ul>
+<li>higherX@gmail.com</li>
+<li>+919327725889,+919624737542</li>
+<li>higherX.support</li>
+</ul>
+   </pre></footer>
+
+
+</body>
+</html>
